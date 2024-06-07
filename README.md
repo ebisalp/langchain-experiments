@@ -24,6 +24,7 @@ By selling LangChain-based applications as a service to businesses, you can prov
 ## Requirements
 
 - [Python 3.6 or higher](https://www.python.org/downloads/)
+- [PostgreSQL](https://www.enterprisedb.com/downloads/postgres-postgresql-downloads)
 - [LangChain library](https://python.langchain.com/en/latest/index.html)
 - [OpenAI API key](https://platform.openai.com/)
 - [SerpAPI API Key](https://serpapi.com/)
@@ -60,7 +61,7 @@ conda activate langchain-env
 ``` bash
 pip install -r requirements.txt
 ```
-
+If you face errors with pg_config can't be found, check this page [pg_config issues](https://www.geeksforgeeks.org/how-to-fix-pg_config-executable-not-found-in-python/) 
 #### 4. Set up the keys in a .env file
 
 First, create a `.env` file in the root directory of the project. Inside the file, add your OpenAI API key:
